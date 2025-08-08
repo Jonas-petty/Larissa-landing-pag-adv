@@ -9,17 +9,17 @@
     <body>
         <header>
             <h1>Larissa Felix</h1>
-            <nav id="nav-bar">
+            <nav id="navbar">
                 <ul>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section id="hero">
-                <div class="hero-content">
+                <div id="hero-content">
                     <h2>Claridade e Confianca em Cada Contrato</h2>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing
@@ -58,7 +58,7 @@
             </section>
             <section id="services">
                 <h2>Serviços</h2>
-                <div class="services-container">
+                <div id="services-container">
                     <div class="service-card">
                         <h3>Contratos Empresariais</h3>
                         <p>
@@ -85,9 +85,6 @@
                     </div>
                 </div>
             </section>
-            <div id="call-to-action">
-                <p>Seus Contratos merecem precisão e proteção</p>
-            </div>
             <section id="testimonials">
                 <div class="testimony">
                     <blockquote>
@@ -97,14 +94,27 @@
                     <cite>- Emily R.</cite>
                 </div>
             </section>
+            <div id="call-to-action">
+                <p>Seus Contratos merecem precisão e proteção</p>
+            </div>
             <section id="contact">
                 <h2>Contato</h2>
                 <div id="contact-container">
                     <form id="contact-form" action="#">
                         <label for="name">Nome</label>
-                        <input type="text" id="name" required />
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Nome"
+                            required
+                        />
                         <label for="email">Email</label>
-                        <input type="email" id="email" required />
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Email"
+                            required
+                        />
                         <label for="services">Serviço</label>
                         <select name="services" id="services" required>
                             <option value="">Escolha um serviço</option>
@@ -117,22 +127,23 @@
                             name="message"
                             id="message"
                             maxlength="500"
+                            placeholder="Mensagem"
                         ></textarea>
-                        <button type="submit">Confirmar</button>
+                        <button class="default" type="submit">Confirmar</button>
                     </form>
                     <div id="info-container">
                         <div id="map">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126418.20443030934!2d-35.01661897943269!3d-8.04330299056202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab196f94e5408b%3A0xe5800ef782bde3a6!2sRecife%2C%20PE!5e0!3m2!1spt-BR!2sbr!4v1754675500779!5m2!1spt-BR!2sbr"
-                                width="600"
-                                height="450"
+                                width="auto"
+                                height="auto"
                                 style="border: 0"
                                 allowfullscreen=""
                                 loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"
                             ></iframe>
                         </div>
-                        <div class="info">
+                        <div id="info">
                             <ul>
                                 <li>Phone: +00 (00) 00000-0000</li>
                                 <li>Email: email@teste.com</li>
@@ -143,6 +154,8 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            
+        </footer>
     </body>
 </html>
