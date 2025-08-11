@@ -142,6 +142,7 @@ header > h1 {
 }
 
 #hero-image-container > img {
+    display: block;
     max-height: 45rem;
     width: 100%;
     height: 100%;
@@ -299,4 +300,37 @@ footer {
     justify-content: space-between;
 
     padding: 1rem;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    #hero-container,
+    #about-container,
+    #contact-content-container {
+        flex-direction: column-reverse;
+    }
+
+    #hero-image-container {
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 40%,
+            var(--primary-color) 85%
+        );
+    }
+
+    #hero-image-container > img {
+        z-index: -1;
+    }
+
+    #services-cards-container {
+        max-width: 30rem;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    nav.vertical > ul {
+        flex-direction: column;
+        align-items: self-start;
+    }
 }
