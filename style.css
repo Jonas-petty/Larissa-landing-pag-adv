@@ -47,25 +47,26 @@ h2 {
 
 /* Buttons */
 
-button {
+.button {
+    text-decoration: none;
     cursor: pointer;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
 }
 
-button:hover {
+.button:hover {
     transform: scale(1.1);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.219);
 }
 
-button.default {
+.button.default {
     color: var(--primary-color);
     background-color: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
 
-button.alt {
+.button.alt {
     color: var(--accent-color);
     background-color: var(--primary-color);
     border: 1px solid var(--accent-color);
